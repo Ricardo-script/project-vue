@@ -1,6 +1,6 @@
 <template>
     <h2>Esta é a descrição da pessoa: {{ nome }}</h2>
-    <Info />
+    <Info :email="email"/>
     <FormComponent />
 </template>08:51
 
@@ -11,7 +11,8 @@
         name: 'Pessoa',
         data(){
             return{
-                nome: 'Ricardo'
+                nome: 'Ricardo',
+                email: 'ricardo@gmail.com.br'
             }
         },
         components:{
